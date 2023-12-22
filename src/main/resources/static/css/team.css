@@ -4,11 +4,11 @@ section {
     position: relative;
     width: 100%;
     display: flex;
-    height: 84vh;
+    height: 83vh;
 }
 .team{
     position: absolute;
-    top: 220px;
+    top: 160px;
     left: 370px;
     line-height: 70px;
     width: 1200px;
@@ -38,7 +38,7 @@ section .team .member img{
     display: inline-block;
     top:50%; 
     left:50%;
-    margin-top:35px; 
+    margin-top:100px;
     margin-left:-10px;
     line-height:15px; 
     cursor:pointer;
@@ -60,7 +60,8 @@ section .team .member img{
   .modal_content1{
     width:800px; 
     height:500px;
-    background:rgba(225, 225, 225, 0.2); 
+    background:white;
+      opacity: 0.8;
     border-radius:10px;
     position:relative; 
     top:0%; 
@@ -76,7 +77,8 @@ section .team .member img{
   .modal_content2{
     width:800px; 
     height:500px;
-    background:rgba(225, 225, 225, 0.2); 
+      background:white;
+      opacity: 0.8;
     border-radius:10px;
     position:relative; 
     top:0%; 
@@ -92,7 +94,8 @@ section .team .member img{
   .modal_content3{
     width:800px; 
     height:500px;
-    background:rgba(225, 225, 225, 0.2); 
+      background:white;
+      opacity: 0.8;
     border-radius:10px;
     position:relative; 
     top:0%; 
@@ -108,7 +111,8 @@ section .team .member img{
   .modal_content4{
     width:800px; 
     height:500px;
-    background:rgba(225, 225, 225, 0.2); 
+      background:white;
+      opacity: 0.8;
     border-radius:10px;
     position:relative; 
     top:0%; 
@@ -124,7 +128,8 @@ section .team .member img{
   .modal_content5{
     width:800px; 
     height:500px;
-    background:rgba(225, 225, 225, 0.2); 
+      background:white;
+      opacity: 0.8;
     border-radius:10px;
     position:relative; 
     top:0%; 

@@ -16,12 +16,12 @@ header {
     z-index: 9999;
 }
 
-.logo {
-    font-size: 55px;
+.logo img{
+    font-size: 50px;
     top: 5px;
     left: 150px;
     height: 100px;
-    width: 200px;
+    width: 250px;
     position: absolute;
 }
 
@@ -78,10 +78,10 @@ ul {
     top: 100px;
     height: 200px;
     width: 100%;
-    background-color: gray;
+    background-color: white;
     border-bottom: 1px solid #cfcfcf;
-    opacity: 0.7;
-    z-index: 999;
+    opacity: 0.95;
+    z-index: 3;
 }
 
 .sub {
@@ -104,5 +104,11 @@ a {
     text-decoration-line: none;
     color: inherit;
 }
+.sub li a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+
 *, *:before, *::after { margin: 0; padding: 0; box-sizing: border-box }
 
