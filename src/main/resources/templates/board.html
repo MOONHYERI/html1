@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" th:href="@{/css/board.css}">
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+
+    <script th:src="@{/js/header.js}"></script>
+    <title>주차의 민족
+    </title>
+
+
+
+</head>
+
+<body>
+<div class="container"></div>
+<header th:include="header :: header"></header>
+    <section>
+        <form action="" class="bord">
+            <div id="bbs">
+                <div id="bbs_title">
+                    <h2>게 시 판</h2>
+                </div>
+                <form action="" method="post" name="myForm">
+                    <div class="form_a">
+                        <div class="title">
+                            <p>제목</p>
+                        </div>
+                        <div class="wirte_form">
+                            <div>
+                                <p>작 성 자</p>
+                            </div>
+                            <div>
+                                <p>시 간</p>
+                            </div>
+                            <div>
+                                <p>조회수</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <form>
+                    <div class="detail">
+                        <p>내 용</p>
+                    </div>
+                    <div id="bbsCreated_footer">
+                        <input type="button" value=" 목록 " class="btn2" />
+                        <input type="reset" value=" 수정 " class="btn2" />
+                        <input type="button" value=" 삭제 " class="btn2" />
+                    </div>
+                </form>
+                <div class="comment-title">
+                    <h3>comment</h3>
+                </div>
+                <form action="" class="cmm">
+                    <div class="comment">
+                        <p>댓글 쓰기</p>
+                        <input type="text">
+                        <button>등록</button>
+                    </div>
+                    <div class="com">
+                        <div class="com2">
+                            <p>작성자</p>
+                            <div>
+                                <button class="modify">삭제</button>
+                                <button class="modify">수정</button>
+                            </div>
+                        </div>
+                        <input type="date" class="date">
+                        <p class="a">내용</p>
+                    </div>
+                </form>
+            </div>
+
+        </form>
+
+    </section>
+<footer th:include="footer :: footer"></footer>
+</body>
+
+</html>

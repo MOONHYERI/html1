@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" th:href="@{/css/map.css}">
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+
+    <script th:src="@{/js/header.js}"></script>
+    <script th:src="@{/js/map.js}"></script>
+    <title>ALL PARKING
+    </title>
+
+</head>
+
+<body>
+<div class="container"></div>
+<header th:include="header :: header"></header>
+
+<section>
+    <aside id="sidebar">
+        <div class="list">
+            <p>목적지 검색</p>
+            <form class="serch">
+                <input type="text" class="serchtext">
+                <input type="button" class="serchbt">
+            </form>
+            <table>
+                <th>주차장 이름 :</th>
+                <td>바보주차장</td>
+                <tr>
+                    <td>서울시 강서구 화곡동</td>
+                    <td>02-2222-2222</td>
+                    <td>1,000,000원</td>
+                </tr>
+            </table>
+            <table>
+                <th>주차장 이름 :</th>
+                <td>바보주차장</td>
+                <tr>
+                    <td>서울시 강서구 화곡동</td>
+                    <td>02-2222-2222</td>
+                    <td>1,000,000원</td>
+                </tr>
+            </table>
+            <table>
+                <th>주차장 이름 :</th>
+                <td>바보주차장</td>
+                <tr>
+                    <td>서울시 강서구 화곡동</td>
+                    <td>02-2222-2222</td>
+                    <td>1,000,000원</td>
+                </tr>
+            </table>
+
+        </div>
+        <button id="toggleButton">
+            <span class="btn_t"></span>
+            <img id="toggleIcon" src="./image/angle-right-solid.svg" alt="OPEN">
+        </button>
+    </aside>
+    <div class="map">
+        <p>멍청이</p>
+    </div>
+</section>
+<footer th:include="footer :: footer"></footer>
+</body>
+
+</html>

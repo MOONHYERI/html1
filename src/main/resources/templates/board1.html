@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" th:href="@{/css/boardinfo.css}">
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+
+    <script th:src="@{/js/header.js}"></script>
+    <title>ALL PARKING
+    </title>
+
+</head>
+
+<body>
+    <div class="container"></div>
+    <header th:include="header :: header"></header>
+    <section>
+        <form action="" class="bord">
+            <h2>게 시 판</h2>
+            <table class="bord-table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="th-num">번호</th>
+                        <th scope="col" class="th-title">제목</th>
+                        <th scope="col" class="th-name">글쓴이</th>
+                        <th scope="col" class="th-date">등록일</th>
+                        <th scope="col" class="th-date">조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <th>
+                            <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
+                        <td>멍청이</td>
+                        </th>
+                        <td>2017.07.13</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                        <td>바보</td>
+                        <td>2017.06.15</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li><select name="serch date" id="serch date">
+                        <option value="week"> 일주일</option>
+                        <option value="month">한달</option>
+                        <option value="3month">세달</option>
+                        <option value="all">전체</option>
+                    </select></li>
+                <li><select name="serch key" id="serch key">
+                        <option value="subject">제목</option>
+                        <option value="content">내용</option>
+                        <option value="writer_name">글쓴이</option>
+                        <option value="member_id">아이디</option>
+                    </select></li>
+                <input type="text">
+                <a th:href="@{/me}">검색하기</a>
+                &nbsp;&nbsp;
+                <a th:href="@{/boardwrite}"> 글쓰기</a>
+            </ul>
+        </form>
+    </section>
+    <footer th:include="footer :: footer"></footer>
+</body>
+
+</html>
